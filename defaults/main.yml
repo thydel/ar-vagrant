@@ -1,2 +1,6 @@
 ---
-# defaults file for /home/thy/usr/thydel/ar-vagrant
+
+vagrant_baseurl: https://dl.bintray.com/mitchellh/vagrant
+vagrant_debfile: vagrant_1.7.2_x86_64.deb
+vagrant_debdir: /usr/local/deb
+

@@ -1,0 +1,6 @@
+---
+
+vagrant_description: Install latest Vagrant
+vagrant_templates:
+  - ./README.md
+  - meta/main.yml

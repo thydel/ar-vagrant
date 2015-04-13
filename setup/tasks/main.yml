@@ -1,0 +1,7 @@
+---
+
+- template:
+    src: "{{ item }}.j2"
+    dest: "{{ item }}"
+    mode: 0444
+  with_items: vagrant_templates

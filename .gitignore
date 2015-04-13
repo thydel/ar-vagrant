@@ -8,3 +8,7 @@
 README.html
 .hgwebremote
 .hgwebpath
+.hide/
+.unroll
+mkfile
+vagrant-roll.yml

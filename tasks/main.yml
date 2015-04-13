@@ -1,2 +1,19 @@
 ---
-# tasks file for /home/thy/usr/thydel/ar-vagrant
+
+- apt:
+    name: virtualbox
+
+- file:
+    path: "{{ vagrant_debdir }}"
+    state: directory
+  always_run: True
+
+- get_url:
+    url: "{{ vagrant_baseurl }}/{{ vagrant_debfile }}"
+    dest: "{{ vagrant_debdir }}"
+  environment:
+    http_proxy: http_proxy | default(omit)
+
+- apt:
+    deb: "{{ vagrant_debdir }}/{{ vagrant_debfile }}"
+
