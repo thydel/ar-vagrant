@@ -24,8 +24,8 @@ http_proxy: # use to set environment http_proxy, default(omit)
 
 ## Usage
 
-ansible-playbook -i localhost, vagrant-setup.yml --diff
-ansible-playbook -i localhost, -c local vagrant-play.yml --check
+- ansible-playbook -i localhost, vagrant-setup.yml --diff
+- ansible-playbook -i localhost, -c local vagrant-play.yml --check
 
 ## License
 
